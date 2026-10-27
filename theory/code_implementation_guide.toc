@@ -1,0 +1,24 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Общая архитектура программного комплекса}{3}{section.1}%
+\contentsline {section}{\numberline {2}Хитрость 1. Преодоление катастрофической потери точности (Алгоритм Велфорда)}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}В чем состоит скрытая проблема наивного подхода?}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Математическое решение: Рекуррентный алгоритм Велфорда (1962)}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Реализация аккумулятора в коде C++}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Хитрость 2. Правильный выбор генератора псевдослучайных чисел (ГПСЧ)}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Почему категорически нельзя использовать \texttt {rand()}}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Выбор: 64-битный вихрь Мерсенна (\texttt {std::mt19937\_64})}{5}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Хитрость 3. Честное сопоставление вычислений для антитетических переменных}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Проблема честного нормирования}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Как это решено в нашем коде}{6}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Хитрость 4. Искусство подбора контрольных функций (Control Variates)}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}1. Пример для $\DOTSI \intop \ilimits@ _0^1 e^x dx$: Хорда против ряда Тейлора}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}2. Пример для $\DOTSI \intop \ilimits@ _0^{\pi /2} \sin (x) dx$: Парабола с нулевой производной}{8}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Хитрость 5. Краевая сингулярность и машинная арифметика в Варианте 7}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}1. Ловушка корня из отрицательного нуля}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Решение в коде: Защитное отсечение (Clamping)}{9}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}2. Сопоставление с поведением формулы Симпсона из Лаб №5}{9}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Сводные результаты работы программы}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}1. Задача 1.1: $I = \DOTSI \intop \ilimits@ _0^1 e^x dx = e - 1$ ($N = 10^6$)}{10}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}2. Сходимость по объему выборки $N$ (логарифмическая сетка)}{10}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}3. Прямое сопоставление с квадратурами Лабораторной работы №5}{10}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Заключение}{11}{section.8}%
